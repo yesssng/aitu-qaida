@@ -1,0 +1,46 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 58px;
+    align-items: center;
+}
+
+header div{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    font-weight: 600;
+    position: relative;
+}
+
+ul li::after {
+    content: "";
+    display: block;
+    position: absolute; /* Для абсолютного позиционирования */
+    bottom: 0; /* Перемещаем псевдоэлемент вниз до нижнего края элемента списка */
+    left: 0; /* Располагаем псевдоэлемент слева от элемента списка */
+    width: 80px; /* Ширина псевдоэлемента равна ширине элемента списка */
+    height: 2px;
+    background-color: transparent;
+    transition: .2s ease-in-out;
+}
+
+ul li:hover::after{
+    background-color: var(--primary-color);
+}
+
+
+
+

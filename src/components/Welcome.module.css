@@ -1,0 +1,75 @@
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+
+
+img{
+    width: 50%;
+}
+
+.welcomeDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 445px;
+}
+
+.welcomeDesc h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.welcomeDesc p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+
+.welcomeAction{
+    display: flex;
+    width: 365px;
+    height: 48px;
+    gap: 20px;
+}
+
+
+
+.welcomeAction p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.robot{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transform: scaleX(-1);
+    animation: moveUpDown 10s infinite ease-in-out;
+    margin-top: 10px;
+}
+
+@keyframes moveUpDown {
+    0%, 100%{
+        top: 0;
+        left: 0;
+    } 25% {
+        top: 100px;
+        left: 100px;
+    } 50% {
+        top: 0;
+        right: 0;
+    } 75% {
+        top: 100px;
+        right: 100px;
+    }
+}

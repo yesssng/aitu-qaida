@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 666px;
+    margin-top: 40px;
+    border-radius: 20px; 
+    background-color: #EEF6FF;
+}
+
+.containerDesc{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    width: 540px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.messages {
+    flex: 1; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column-reverse; /* Расположение сообщений снизу вверх */
+    overflow-y: auto; /* Добавляем прокрутку */
+    padding: 10px; /* Добавляем отступы внутри контейнера */
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    padding: 8px;
+}
+
+.input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    height: 61px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+    width: 900px;
+}
+
+.input::placeholder{
+    color: white
+}
+
+button{
+    width: 120px;
+    padding: 8px;
+    height: 61px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+}
+
+
+.suggestContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.suggests{
+    display: flex;
+    gap: 5px;
+}
+
+.suggest{
+    width: 510px;
+    height: 40px;
+}
+
+.loop{
+    animation: spin 2s infinite linear;
+}
+
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.user,
+.chat {
+    max-width: 70%; /* Максимальная ширина сообщения */
+    margin-bottom: 10px; /* Отступ между сообщениями */
+    padding: 10px; /* Отступы внутри сообщений */
+    border-radius: 10px; /* Закругление углов */
+}
+
+.user {
+    align-self: flex-end; /* Размещаем сообщения пользователя справа */
+    background-color: #80bfff; /* Цвет фона для сообщений пользователя */
+    color: white; /* Цвет текста для сообщений пользователя */
+}
+
+.chat {
+    align-self: flex-start; /* Размещаем сообщения чат-бота слева */
+    background-color: #e6e6e6; /* Цвет фона для сообщений чат-бота */
+    color: black; /* Цвет текста для сообщений чат-бота */
+}
+/* Style your send button here if you add one */

@@ -1,0 +1,30 @@
+.feature{
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: -10px;
+}
+
+.title h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 16;
+    line-height: 24px;
+}
