@@ -61,7 +61,7 @@ const Roadmap = () => {
             <div className={RoadmapStyle.rightSideCard}>
                 <img src={Arrow} alt="" className={RoadmapStyle.arrow2}/>
                 <div className={RoadmapStyle.info}>
-                    <h3>Place 2</h3>
+                    <h3>Khan-Shatyr</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt deleniti vero porro quos voluptatem ad nostrum vitae accusamus quibusdam dolor? Harum, provident. Doloremque temporibus distinctio perspiciatis exercitationem rem vel consequatur!</p>
                     <div>
                         <LocalPhoneIcon />
@@ -81,7 +81,7 @@ const Roadmap = () => {
             <div className={RoadmapStyle.leftSideCard}>
                 <img src={dvorec} alt="" style={{borderRadius: 20}}/>
                 <div className={RoadmapStyle.info}>
-                    <h3>Place 3</h3>
+                    <h3>Palace of independence</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates eligendi reiciendis. Sint, excepturi natus asperiores soluta voluptatum consequuntur quos nam maiores. Aspernatur nostrum praesentium veritatis sint? Tenetur, suscipit rerum!</p>
                     <div>
                         <LocalPhoneIcon />
